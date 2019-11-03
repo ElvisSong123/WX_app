@@ -1,8 +1,0 @@
-<!--components/search/search-cmp.wxml-->
-<view class="container">
-    <input type="text" class = "input" placeholder="轻芒什么都有" 
-                       bindconfirm ="bindconfirm"
-                       bindblur = "onblur"
-                       value = "{{searchValue}}"/>
-    <text class = "text" bind:tap="bindconfirm">搜索</text>
-</view>

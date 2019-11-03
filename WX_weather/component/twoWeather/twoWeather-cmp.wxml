@@ -1,0 +1,25 @@
+ <view class="twoWeather">
+      <view class="left">
+        <view class="top">
+          <view class="date">今天</view>
+          <view class="temp">{{moreInfo.daily_forecast[0].tmp_min + '/' + moreInfo.daily_forecast[0].tmp_max}}</view>
+        </view>
+        <view class="bottom">
+          <view class="status">{{moreInfo.daily_forecast[0].cond_txt_d}}</view>
+          <cmp-changeImg imgStatus = "{{moreInfo.daily_forecast[0].cond_txt_d}}"></cmp-changeImg>
+        </view>
+        
+      </view>
+      <view class="line"></view>
+      <view class="right">
+        <view class="top">
+          <view class="date">明天</view>
+          <view class="temp">{{moreInfo.daily_forecast[1].tmp_min + '/' + moreInfo.daily_forecast[1].tmp_max}}</view>
+        </view>
+        <view class="bottom">
+          <view class="status">{{moreInfo.daily_forecast[1].cond_txt_d}}</view>
+          <cmp-changeImg imgStatus = "{{moreInfo.daily_forecast[1].cond_txt_d}}"></cmp-changeImg>          
+        </view>
+        
+      </view>
+    </view>

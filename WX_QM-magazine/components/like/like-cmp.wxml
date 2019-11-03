@@ -1,4 +1,0 @@
-<view class="container">
-    <image class="like" mode = "widthFix" src="/components/like/image/circle_fill.png" hidden="{{!isLike}}" catch:tap="onTap"></image>
-    <image class="unlike"mode = "widthFix"  src="/components/like/image/circle.png" hidden="{{isLike}}" catch:tap="onTap"></image>
-</view>

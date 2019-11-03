@@ -1,0 +1,70 @@
+<view class = "container">
+  <view class="head">
+    <cmp-position location="{{weatherData.basic.location}}"></cmp-position>
+    <cmp-weatherInfo weatherData = "{{weatherData.now}}"></cmp-weatherInfo>
+    <cmp-twoWeather moreInfo = "{{moreWeatherData}}"></cmp-twoWeather>
+  </view>
+  
+  <view class="body">
+    <view class="detailInfo">
+      <scroll-view scroll-x = "true" class = "scroll">
+
+
+        <view class="hourInfo">
+          <view class="info-box">
+              <view class="time">11:00</view>
+              <cmp-changeImg imgStatus = "{{moreWeatherData.daily_forecast[0].cond_txt_d}}"></cmp-changeImg>
+              <view class="tmp">23'</view>
+          </view>
+        </view>
+        <view class="hourInfo">
+          <view class="info-box">
+              <view class="time">12:00</view>
+              <cmp-changeImg imgStatus = "{{moreWeatherData.daily_forecast[1].cond_txt_d}}"></cmp-changeImg>
+              <view class="tmp">25'</view>
+          </view>
+        </view>
+        <view class="hourInfo">
+          <view class="info-box">
+              <view class="time">13:00</view>
+              <cmp-changeImg imgStatus = "{{moreWeatherData.daily_forecast[1].cond_txt_d}}"></cmp-changeImg>
+              <view class="tmp">28'</view>
+          </view>
+        </view>
+         <view class="hourInfo">
+          <view class="info-box">
+              <view class="time">14:00</view>
+              <cmp-changeImg imgStatus = "{{moreWeatherData.daily_forecast[1].cond_txt_d}}"></cmp-changeImg>
+              <view class="tmp">26'</view>
+          </view>
+        </view>
+         <view class="hourInfo">
+          <view class="info-box">
+              <view class="time">15:00</view>
+              <cmp-changeImg imgStatus = "{{moreWeatherData.daily_forecast[1].cond_txt_d}}"></cmp-changeImg>
+              <view class="tmp">25'</view>
+          </view>
+        </view>
+         <view class="hourInfo">
+          <view class="info-box">
+              <view class="time">16:00</view>
+              <cmp-changeImg imgStatus = "{{moreWeatherData.daily_forecast[0].cond_txt_d}}"></cmp-changeImg>
+              <view class="tmp">23'</view>
+          </view>
+        </view>
+         <view class="hourInfo">
+          <view class="info-box">
+              <view class="time">17:00</view>
+              <cmp-changeImg imgStatus = "{{moreWeatherData.daily_forecast[0].cond_txt_d}}"></cmp-changeImg>
+              <view class="tmp">22'</view>
+          </view>
+        </view>
+
+      </scroll-view>
+    </view>
+    <view class="moreInfo">
+        更多内容请访问中国天气网
+    </view>
+  </view>
+
+</view>

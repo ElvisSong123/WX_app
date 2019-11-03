@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+
+        "cmp-changeImg": "../changeImg/changeImg-cmp"
+    }
+}

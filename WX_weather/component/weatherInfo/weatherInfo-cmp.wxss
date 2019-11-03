@@ -1,0 +1,36 @@
+.weatherInfo {
+    width: 750rpx;
+    height: 300rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 26rpx;
+    letter-spacing: 3rpx;
+    margin-bottom: 30rpx;
+}
+
+.weatherInfo .nowTemp {
+    font-size: 120rpx;
+    font-weight: bold;
+    position: relative;
+}
+
+.weatherInfo .nowTemp::after {
+    content: '';
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 20rpx;
+    left: 160rpx;
+}
+
+.weatherInfo .otherInfo {
+    display: flex;
+}
+
+.weatherInfo .otherInfo view {
+    margin: 0 10rpx;
+}

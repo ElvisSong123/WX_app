@@ -1,0 +1,8 @@
+<!--component/position/position-cmp.wxml-->
+<view class="position">
+       <view class="nowCity">{{location}}</view>
+       <view class="search">
+          <view class="airQuality">优 34</view>
+          <view class="chooseCity" bind:tap="chooseCity">选择城市</view>
+        </view>
+    </view>

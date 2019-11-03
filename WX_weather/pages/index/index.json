@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "cmp-position": "/component/position/position-cmp",
+        "cmp-weatherInfo": "/component/weatherInfo/weatherInfo-cmp",
+        "cmp-twoWeather": "/component/twoWeather/twoWeather-cmp",
+        "cmp-changeImg": "/component/changeImg/changeImg-cmp"
+    }
+}

@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="back">
+        <image class="img" src="/image/back.png" bind:tap="onBack"></image>
+    </view>
+    <view class="search">
+        <input type="text" placeholder="请输入城市名" 
+                bindconfirm = "onSearch"
+                bindblur = "onBlur"></input>
+        <view class="button" bind:tap="onSearch">确定</view>
+    </view>
+    
+
+</view>

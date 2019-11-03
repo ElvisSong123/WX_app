@@ -1,7 +1,0 @@
-.container {
-    width: 50rpx;
-}
-
-.container .image {
-    width: 100%;
-}

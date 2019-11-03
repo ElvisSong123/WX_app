@@ -1,0 +1,75 @@
+/**index.wxss**/
+
+page {
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    width: 750rpx;
+    margin: 0;
+    padding: 0;
+    color: #fff
+}
+
+.head {
+    width: 100%;
+    background-image: url('https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1563100615&di=ed967dc7b25eaf5121fece929498b00e&src=http://img.pconline.com.cn/images/upload/upc/tx/itbbs/1412/28/c14/1223167_1419772621368_mthumb.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.body {
+    width: 100%;
+    height: 800rpx;
+    background: rgb(60, 174, 235)
+}
+
+.detailInfo {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200rpx;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.detailInfo .scroll {
+    width: 750rpx;
+    height: 100%;
+    white-space: nowrap;
+    /* border: 1px solid black; */
+}
+
+.scroll .hourInfo {
+    display: inline-block;
+    width: 120rpx;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #fff; */
+    position: relative;
+}
+
+.scroll .hourInfo .info-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* white-space: wrap; */
+    overflow: hidden;
+    vertical-align: text-top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 26rpx;
+    align-items: center;
+}
+
+.moreInfo {
+    width: 100%;
+    height: 200rpx;
+    font-size: 50rpx;
+    line-height: 200rpx;
+    text-align: center;
+    color: #fff;
+}

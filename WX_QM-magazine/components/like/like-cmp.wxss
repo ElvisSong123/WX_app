@@ -1,4 +1,0 @@
-.container .like,
-.unlike {
-    width: 50rpx;
-}

@@ -1,0 +1,9 @@
+ <view class="img">
+            <image src="/image/bitRain.png" wx:if="{{imgStatus == '雷阵雨'}}"/>
+            <image src="/image/clode.png" wx:elif="{{imgStatus == '多云'}}"/>
+            <image src="/image/yin.png" wx:elif="{{imgStatus == '阴'}}"/>
+            <image src="/image/smallRain.png" wx:elif="{{imgStatus == '小雨'}}"/>
+            <image src="/image/middleRain.png" wx:elif="{{imgStatus == '中雨'}}"/>
+            <image src="/image/sun.png" wx:elif="{{imgStatus == '雷阵雨'}}"/>
+            <image src="/image/baoRain.png" wx:else="{{imgStatus == '暴雨'}}"/>
+</view>

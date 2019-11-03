@@ -1,7 +1,0 @@
-
-<view class="container">
-    <image class="image" 
-           src="/components/more/image/more.png"
-           catch:tap="onTap"
-           mode="widthFix"></image>
-</view>

@@ -1,0 +1,10 @@
+<view class="weatherInfo">
+        <view class="nowTemp">{{weatherData.tmp}}</view>
+        <view class="weaState">{{weatherData.cond_txt}}</view>
+        <view class="otherInfo">
+          <view class="humidity">湿度{{weatherData.hum}}%</view>
+          <view class="line">|</view>
+          <view class="windPower">东风{{weatherData.wind_sc}}级</view>
+        </view>
+        <view class="remind">你若安好，便是晴天</view>
+</view>

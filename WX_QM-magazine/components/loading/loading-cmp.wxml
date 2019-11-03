@@ -1,7 +1,0 @@
-<!--components/loading/loading-cmp.wxml-->
-<view class="container" hidden="{{hidden}}">
-
-    <view class="circle circle-first" ></view>
-    <view class="circle circle-second"></view>
-</view>
-
