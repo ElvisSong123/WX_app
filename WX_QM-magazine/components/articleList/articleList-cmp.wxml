@@ -1,0 +1,10 @@
+
+<view class="container">
+    <cmp-article wx:for="{{articleList}}" 
+             articleList = "{{item}}" 
+             wx:key="{{artId}}"
+             ></cmp-article>
+    <cmp-loading hidden = "{{!loading}}"></cmp-loading>
+    <text class = "noData" wx:if="{{noMoreData}}">没有更多数据了</text>
+</view>
+

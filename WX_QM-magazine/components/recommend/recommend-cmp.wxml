@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="date">{{magazineId == 0 ? date : magazineTypeList[magazineId]}}</view>
+    <view class="text">{{recommend.title}}</view>
+    <view class="bigImg">
+        <image mode="widthFix" src = "{{recommend.imgSrc}}" hidden="{{!recommend.imgSrc}}"/>
+        <view class="skelech" hidden = "{{recommend.imgSrc}}">
+            <view class="loader"></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="container">
+    <slot name = "before"></slot>
+    <cmp-tag wx:for="{{tagList}}" wx:key="" tagName = "{{item.type || item.tag}}" class = "tagList"></cmp-tag>
+    <slot name = "after"></slot>
+</view>

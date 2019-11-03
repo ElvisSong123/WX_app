@@ -1,0 +1,10 @@
+/* components/add/add-cmp.wxss */
+
+.spot {
+    font-size: 32rpx;
+    color: #fff;
+    padding: 5rpx 20rpx;
+    background-color: #000;
+    display: inline-block;
+    margin-right: 20rpx;
+}

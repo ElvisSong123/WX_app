@@ -1,0 +1,22 @@
+/* components/plainText/plainText-cmp.wxss */
+
+.container {
+    width: 700rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box
+}
+
+.main-text {
+    width: 100%;
+    font-size: 40rpx;
+    line-height: 50rpx;
+    font-weight: 300;
+    margin-bottom: 20rpx;
+    color: #333
+}
+
+.sub-text {
+    width: 100%;
+    font-size: 24rpx;
+    color: #555;
+}

@@ -1,0 +1,16 @@
+/* components/articleList/articleList-cmp.wxss */
+
+.container {
+    padding: 25rpx;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.noData {
+    display: block;
+    width: 700rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 26rpx;
+    color: #555;
+}

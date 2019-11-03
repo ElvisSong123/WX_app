@@ -1,0 +1,5 @@
+<!--components/plainText/plainText-cmp.wxml-->
+<view class = "container">
+    <view class = "main-text">{{mainText}}</view>
+    <view class = "sub-text">{{subText}}</view>
+</view>

@@ -1,0 +1,34 @@
+/* components/loading/loading-cmp.wxss */
+
+.container {
+    width: 700rpx;
+    position: relative
+}
+
+.circle {
+    width: 70rpx;
+    height: 70rpx;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 50%;
+    position: absolute;
+    top: 20rpx;
+    left: 50%;
+    margin-left: -35rpx;
+    animation: run 2s infinite
+}
+
+.circle.circle-first {
+    animation-delay: 1s
+}
+
+@keyframes run {
+    0% {
+        scale: 0
+    }
+    50% {
+        scale: 1
+    }
+    100% {
+        scale: 0;
+    }
+}

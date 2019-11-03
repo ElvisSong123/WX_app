@@ -1,0 +1,10 @@
+<scroll-view class = "container"
+             scroll-x = "true"
+             scroll-into-view = "{{magazineIndex}}">
+    <text   class="type {{magazineId == index ? 'active':''}}" 
+            wx:for="{{magazineTypeList}}"
+            wx:key=""
+            bind:tap="onTap"
+            id = "{{'magazine'+index}}"
+            data-index = "{{index}}">{{item}}</text>
+</scroll-view>

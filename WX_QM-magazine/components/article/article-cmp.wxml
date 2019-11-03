@@ -1,0 +1,49 @@
+<view class="container">
+    <view class="headPic">
+        <image class="image" src = "{{articleList.mark.avatar}}"></image>
+        <text class="text">{{articleList.mark.people}}等{{articleList.mark.count}}人马克了</text>
+    </view>
+
+    <view class="content">
+        <cmp-bigImg wx:if="{{articleList.type == 0}}"
+                    imgSrc = "{{articleList.imgArray}}"
+                    mainText = "{{articleList.mainTitle}}"></cmp-bigImg>
+
+        <cmp-plainText  wx:elif="{{articleList.type == 4}}"
+                        mainText = "{{articleList.mainTitle}}"
+                        subText = "{{articleList.subHead}}"
+                        ></cmp-plainText>
+
+        <cmp-imgText wx:elif="{{articleList.type == 2}}"
+                     mainText = "{{articleList.mainTitle}}"
+                     subText = "{{articleList.subHead}}"
+                     imgSrc = "{{articleList.imgArray[0]}}"></cmp-imgText>
+
+        <cmp-nineImage  wx:elif="{{articleList.type == 1}}"
+                        mainText = "{{articleList.mainTitle}}"
+                        imgSrc = "{{articleList.imgArray}}"></cmp-nineImage>
+
+        <cmp-video  wx:elif="{{articleList.type == 3}}"
+                    videoSrc = "{{articleList.video.src}}"
+                    posterSrc = "{{articleList.video.poster}}"
+                    duration = "{{articleList.video.duration}}'"
+                    videoId = "{{articleList.video.id}}"
+                    mainText = "{{articleList.mainTitle}}"
+        ></cmp-video>
+    </view>
+
+    <view class="control-box">
+        <view class="tag">
+            <cmp-tag tagName = "{{articleList.tag || '读书'}}"></cmp-tag>
+        </view>
+        <view class="control">
+            <cmp-more content = "{{articleList.tag}}" class = "control-chil"></cmp-more>
+            <button class="share" open-type="share">
+                 <image src ="/images/mark/relay.png" />
+            </button>
+            <cmp-like isLike = "{{isLike}}" class = "control-chil" catch:like="changeLike"></cmp-like>
+        </view>
+
+    </view>
+
+</view>

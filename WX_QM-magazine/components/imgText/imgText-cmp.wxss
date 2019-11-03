@@ -1,0 +1,36 @@
+/* components/imgText/imgText-cmp.wxss */
+
+.container {
+    width: 700rpx;
+    display: flex;
+    padding: 0 20rpx;
+    box-sizing: border-box
+}
+
+.container .text {
+    width: 70%;
+    margin-right: 20rpx;
+}
+
+.container .text .main-text {
+    width: 100%;
+    font-size: 45rpx;
+    color: #333;
+    margin-bottom: 15rpx;
+    font-weight: bold;
+    letter-spacing: 2rpx
+}
+
+.container .text .sub-text {
+    width: 100%;
+    font-size: 26rpx;
+    color: #666;
+}
+
+.container .image-box {
+    flex: 1;
+}
+
+.image-box .image {
+    width: 100%;
+}

@@ -1,0 +1,3 @@
+<!--components/add/add-cmp.wxml-->
+
+<view class = "spot">+</view>

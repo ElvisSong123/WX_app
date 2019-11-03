@@ -1,0 +1,14 @@
+/* pages/index/index.wxss */
+
+.before {
+    display: inline-block
+}
+
+.after {
+    font-size: 32rpx;
+    color: #fff;
+    padding: 5rpx 20rpx;
+    background-color: #000;
+    display: inline-block;
+    margin-right: 20rpx;
+}

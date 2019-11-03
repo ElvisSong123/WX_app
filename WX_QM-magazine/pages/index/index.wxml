@@ -1,0 +1,17 @@
+
+<cmp-nav bind:myNav = "onNav"></cmp-nav>
+<cmp-recommend recommend = "{{recommend}}" magazineId = "{{magazineid}}"></cmp-recommend>
+<cmp-tagList tagList = "{{markTypeList}}">
+    <view slot = "before" class = "before" wx:if="{{magazineid == 0}}">
+        <cmp-add></cmp-add>
+    </view>
+    <view slot = "after" class = "after" wx:if="{{magazineid == 0}}" bind:tap="onMark">···</view>
+</cmp-tagList>
+
+
+<cmp-articleList articleList = "{{articleList}}"
+                 more = "{{moreList}}"
+                 magazineId = "{{magazineid}}">
+
+</cmp-articleList>
+
